@@ -22,7 +22,7 @@
     </div>
 
     <!-- add money box start -->
-    <form id="add-money-form" class="card-body">
+    <form id="add-money-form" class="hidden card-body">
       <div class="form-control">
         <label class="label">
           <span class="label-text">Amount</span>
@@ -37,11 +37,38 @@
       </div>
       <div class="form-control mt-6">
         <button id="add-money-btn-down" class="btn btn-primary">Add Money</button>
-        <h1 id="successfully-added" class="text-center mt-4 text-2xl font-extrabold text-green-600"></h1>
-        <h1 id="wrong-password" class="text-center mt-4 text-2xl font-extrabold text-red-600"></h1>
+        <h1 id="successfully-added-for-add" class="text-center mt-4 text-2xl font-extrabold text-green-600"></h1>
+        <h1 id="wrong-password-for-add" class="text-center mt-4 text-2xl font-extrabold text-red-600"></h1>
       </div>
     </form>
     <!-- add money box end -->
+
+    <!-- cash out box start -->
+
+    <form id="cash-out-form" class="hidden card-body">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Amount</span>
+        </label>
+        <input id="balance-amount-cash-out" type="number" placeholder="Enter Amount" class="input input-bordered" required />
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Password</span>
+        </label>
+        <input id="password-cash-out" type="password" placeholder="Password" class="input input-bordered" required />
+        
+      </div>
+      <div class="form-control mt-6">
+        <button id="cash-out-btn-down" class="btn btn-primary">Cash Out</button>
+        <h1 id="successfully-added-for-cash" class="text-center mt-4 text-2xl font-extrabold text-green-600"></h1>
+        <h1 id="wrong-password-for-cash" class="text-center mt-4 text-2xl font-extrabold text-red-600"></h1>
+        <h1 id="insufficient-for-cash" class="text-center mt-4 text-2xl font-extrabold text-red-600"></h1>
+        
+
+      </div>
+    </form>
+    <!-- cash out box end -->
 
 
   </main>
