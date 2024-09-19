@@ -11,7 +11,7 @@ document.getElementById('login-btn').addEventListener('click', function(event){
       window.location.href = "./otherPage/home.html"
   }
   else{
-    console.log('Phone Number or Password is incorrect...');
+    document.getElementById('login-error').innerText = 'Your Phone Number or Password May be INCORRECT!!!';
   }
 
 
